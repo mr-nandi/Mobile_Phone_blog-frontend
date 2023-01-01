@@ -1,0 +1,32 @@
+<div class="container mt-3" 
+>
+    <h2>MOBILE PHONES</h2>
+    <div class="mt-4 p-5 bg-primary text-white rounded">
+      <h1>Smart Phones</h1> 
+      <p>A smartphone is a portable computer device that combines mobile telephone and computing functions into one unit.
+        People are seen using their smartphones for taking photographs and selfies, playing games, listening to music, reading articles, texting or calling, checking their emails and notifications, and posting or commenting on various social networking websites.
+      </p> 
+    </div>
+  </div>
+<br/>
+<div class="container">
+    
+<div class="row">    
+
+
+  <div class="card" style="width: 15rem;" *ngFor="let post of posts">
+    <img class="card-img-top" src="data:image/png;base64,{{post.postImage}}" alt="Card image cap">
+    <div class="card-body">
+      <h6 class="card-title">{{post.postTitle}}</h6>
+     <p>{{post.postContent | slice : 0 :40 }}...</p>
+      <a href="/post/{{post.postId}}" class="btn btn-primary">Read More</a>
+    </div>
+    
+  </div>
+
+  
+  
+ 
+</div>
+</div>
+<br/>
