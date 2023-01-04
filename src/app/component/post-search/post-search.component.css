@@ -6,7 +6,7 @@ body{
     .card{
       
       border: none;
-      background: #eee;
+      background:rgba(0,0,0,.125);
     
     }
     .search {
